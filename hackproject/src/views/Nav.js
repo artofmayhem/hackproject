@@ -1,8 +1,7 @@
-import { useState } from "react";
 import { AppBar } from "@material-ui/core";
 
 export default function Nav(props) {
-  const [data, setData] = useState(props);
+  const data = props
   console.log("props from Nav component", data);
 
   return (

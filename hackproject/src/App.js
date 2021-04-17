@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Nav from './views/Nav'
 import axios from "axios";
-import { TextField, AppBar } from '@material-ui/core'
+import { TextField } from '@material-ui/core'
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 function App() {
@@ -16,7 +16,7 @@ function App() {
       "x-rapidapi-host": "simpleanime.p.rapidapi.com",
     },
   };
-
+  const anchor = true
   useEffect(() => {
     axios
       .request(options)
@@ -27,7 +27,7 @@ function App() {
       .catch(function (error) {
         console.error(error);
       });
-  }, [searchValue]);
+  }, [anchor]);
 
   const handleChange = (e) => {
     console.log(e.target.value)
