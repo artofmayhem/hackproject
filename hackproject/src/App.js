@@ -8,16 +8,17 @@ function App() {
   const [data, setData] = useState([]);
   const [searchValue, setSearchValue] = useState('')
 
-  const options = {
-    method: "GET",
-    url: `https://simpleanime.p.rapidapi.com/anime/search/${searchValue}`,
-    headers: {
-      "x-rapidapi-key": "cc687eba84mshcc7485fcf110baap193a15jsnfb1be463a74d",
-      "x-rapidapi-host": "simpleanime.p.rapidapi.com",
-    },
-  };
+  
 
   useEffect(() => {
+    const options = {
+      method: "GET",
+      url: `https://simpleanime.p.rapidapi.com/anime/search/${searchValue}`,
+      headers: {
+        "x-rapidapi-key": "cc687eba84mshcc7485fcf110baap193a15jsnfb1be463a74d",
+        "x-rapidapi-host": "simpleanime.p.rapidapi.com",
+      },
+    }
     axios
       .request(options)
       .then(function (response) {
