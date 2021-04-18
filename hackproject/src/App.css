@@ -1,6 +1,9 @@
 h1, h3, h5 {
-  font-family: 'Architects Daughter', cursive;
+  font-family: "Landmark Shadow A", "Landmark Shadow B";
+font-style: normal;
+font-weight: 400;
 }
+
 .header {
   background-image: url(./assets/siteHeader.jpg);
   background-position: center 10%;

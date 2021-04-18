@@ -8,7 +8,6 @@ function App() {
   const [data, setData] = useState([]);
   const [searchValue, setSearchValue] = useState('')
 
-  
 
   useEffect(() => {
     const options = {
