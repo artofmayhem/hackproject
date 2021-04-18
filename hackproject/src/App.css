@@ -20,11 +20,12 @@ h1, h3, h5 {
 .cards {
   background: #444;
   color: lightskyblue;
-  max-width: '30vw';
-  margin: 5vw;
+  width: 450px;
+  margin: 8vh 5vw;
   border: 2px solid violet;
   text-align: center;
   box-shadow: 0 0 1.5rem pink;
-  opacity: 0.9
+  opacity: 0.9;
+  padding: 3vh 0vw
 }
 

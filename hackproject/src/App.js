@@ -16,7 +16,7 @@ function App() {
       "x-rapidapi-host": "simpleanime.p.rapidapi.com",
     },
   };
-  const anchor = true
+
   useEffect(() => {
     axios
       .request(options)
@@ -27,7 +27,7 @@ function App() {
       .catch(function (error) {
         console.error(error);
       });
-  }, [anchor]);
+  }, [searchValue]);
 
   const handleChange = (e) => {
     console.log(e.target.value)
@@ -39,8 +39,8 @@ function App() {
       <Nav data={data} />
     <div className='header' style={{height: '50vh'}}></div>
     
-      <div className='d-flex flex-column flex-wrap justify-content-center' style={{backgroundColor: 'aquamarine'}}>
-        <h3 style={{alignSelf: 'center', padding: '3rem'}}>Start your anime adventure here</h3> 
+      <div className='d-flex flex-column flex-wrap justify-content-center' style={{backgroundColor: 'aquamarine', textAlign: 'center'}}>
+        <h3 style={{alignSelf: 'center', padding: '3rem', color: '#444'}}>Start your anime adventure here</h3> 
         <TextField 
         value={searchValue}
         onChange={handleChange}
@@ -53,7 +53,7 @@ function App() {
           data.map((item, idx) => {
             return (
               <div className='d-flex flex-column flex-wrap justify-content-center cards' key={idx} >
-                <img style={{maxWidth: '30vw', padding: '4vh 5vw'}} src={data[idx].cover} alt={data[idx].title} />
+                <img style={{maxWidth: '50vw', padding: '4vh 0vw', alignSelf: 'center'}} src={data[idx].cover} alt={data[idx].title} />
                 <h3>{data[idx].title}</h3>
                 <h6>Date Added: {data[idx].date}</h6>
                 <p style={{paddingBottom: '2vh'}}>{data[idx].vid_id}</p>
