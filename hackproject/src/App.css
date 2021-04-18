@@ -1,15 +1,24 @@
-h1, h3, h5 {
+h1,
+h3,
+h5 {
   font-family: "Landmark Shadow A", "Landmark Shadow B";
-font-style: normal;
-font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
 }
 
+h4,
+h6,
+p {
+  font-family: "Idlewild A", "Idlewild B";
+  font-style: normal;
+  font-weight: 200;
+}
 .header {
   background-image: url(./assets/siteHeader.jpg);
   background-position: center 10%;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 2px solid white
+  border: 2px solid white;
 }
 
 .cardHolder {
@@ -29,6 +38,5 @@ font-weight: 400;
   text-align: center;
   box-shadow: 0 0 1.5rem pink;
   opacity: 0.9;
-  padding: 3vh 0vw
+  padding: 3vh 0vw;
 }
-

@@ -8,7 +8,7 @@ export default function Nav(props) {
     <AppBar position="static" style={{backgroundColor: '#222'}}>
       <div className='d-flex flex-column'>
         <h1 style={{padding: '2vh 3vw'}}>アニメハウス</h1>
-        <h5 style={{padding: '0 3vw'}}>Anime House</h5>
+        <h3 style={{padding: '0 3vw'}}>Anime House</h3>
       </div>
     </AppBar>
   );
